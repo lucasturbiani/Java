@@ -29,7 +29,7 @@ public final class Area {
      * @return surface area of given cube
      */
     public static double surfaceAreaCube(final double sideLength) {
-        if (sideLength <= 0) {
+                if (sideLength <= 0) {
             throw new IllegalArgumentException("Side length must be greater than 0");
         }
         return 6 * sideLength * sideLength;
@@ -77,8 +77,10 @@ public final class Area {
      * @return surface area of the given pyramid
      */
     public static double surfaceAreaPyramid(final double sideLength, final double slantHeight) {
-        if (sideLength <= 0) {
-throw new IllegalArgumentException("Side length must be greater than 0");        }
+                if (sideLength <= 0) {
+            throw new IllegalArgumentException("Side length must be greater than 0");
+        }
+        
         if (slantHeight <= 0) {
             throw new IllegalArgumentException("slant height must be greater than 0");
         }
